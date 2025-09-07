@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>German Trade House - Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/style_home.css" />
+  <link rel="stylesheet" href="styles/style_services.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    /* Page styles here (or move to style_services.css) */
+  </style>
+</head>
+
+<body class="page-loading">
+  <!-- Loading Overlay -->
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Navbar -->
+  <div id="site-navbar"></div>
+
+  <!-- Main Content -->
+  <main id="main-content" style="opacity: 0;">
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+      <div class="services-hero-bg">
+        <div class="services-hero-content">
+          <h1 class="services-hero-title">Services</h1>
+          <div class="services-hero-subtitle">What We Offer For You</div>
+          <div class="services-hero-accent"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Content Section -->
+    <section class="services-content">
+      <div class="services-text-section">
+        <header class="services-header" role="heading" aria-level="2">
+          <div class="services-header-line"></div>
+          <h2>Our <span>Services</span></h2>
+          <div class="services-header-line"></div>
+        </header>
+        <p class="services-subtitle" aria-label="services subtitle">
+          What we can do for you and your company?
+        </p>
+
+        <article class="services-description">
+          <p class="services-description-p">
+            Based on our services in machinery trade, auctions, and transport, we are the ideal partner for companies in
+            the Middle East and North Africa looking for new or used industrial equipment from Europe. Our experts help
+            you find the right machine – reliable, cost-effective, and quality-checked. We present different options,
+            advise you on the selection, and take care of the entire process all the way to your port.
+          </p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+  <section class="services-checkerboard">
+    <!-- Row 1: Text left, image right -->
+    <div class="service-row">
+      <div class="service-col service-text-col align-right">
+        <h3>Second-Hand Machines</h3>
+        <p>We source and supply used machines from across Europe – quality-checked, reliable, and ready for use.</p>
+        <a href="#" class="service-btn">Read More</a>
+      </div>
+      <div class="service-col service-img-col">
+        <img src="images/service2.jpg" alt="Second-Hand Machines">
+      </div>
+    </div>
+    <!-- Row 2: Image left, text right -->
+    <div class="service-row">
+      <div class="service-col service-img-col">
+        <img src="images/service1.jpg" alt="Transport & Logistics">
+      </div>
+      <div class="service-col service-text-col align-left">
+        <h3>Transport & Logistics</h3>
+        <p>From container shipping to groupage and full-service solutions, we take care of loading, customs clearance,
+          and shipping to your destination.</p>
+        <a href="#" class="service-btn">Read More</a>
+      </div>
+    </div>
+    <!-- Row 3: Text left, image right -->
+    <div class="service-row">
+      <div class="service-col service-text-col align-right">
+        <h3>AUCTIONS SERVICES</h3>
+        <p>We participate in international auctions on your behalf – from selecting the right machine to safe and smooth
+          handling.</p>
+        <a href="#" class="service-btn">Read More</a>
+      </div>
+      <div class="service-col service-img-col">
+        <img src="images/service3.jpg" alt="Auctions Services">
+      </div>
+    </div>
+  </section>
+
+<!-- ============ Footer ========== -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(html => { document.getElementById('footer-placeholder').innerHTML = html; });
+    </script>
+
+  <script src="scripts/navbar.js"></script>
+</body>
+
+</html>

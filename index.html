@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>German Trade House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style_home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body class="page-loading">
+    <!-- Loading Overlay -->
+    <div id="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- NAVBAR (CARD STYLE) -->
+    <div id="site-navbar"></div>
+
+    <!-- Main content -->
+    <div id="main-content" style="opacity: 0">
+        <!-- Hero Slider Start -->
+        <section class="hero-slider">
+            <div class="hero-slides">
+                <!-- Slide 1 -->
+                <div class="hero-slide active" style="background-image: url('images/hero1.jpeg');">
+                    <div class="hero-caption">
+                        <h1>Your Partners In <span>Europe</span></h1>
+                    </div>
+                </div>
+
+                <div class="hero-slide" style="background-image: url('images/hero2.jpeg');">
+                    <div class="hero-caption">
+                        <h1>Specialization on <span>European Market</span> </h1>
+
+                    </div>
+                </div>
+
+                <div class="hero-slide" style="background-image: url('images/hero3.jpg');">
+                    <div class="hero-caption">
+                        <h1>Your Needs, <span>Our Mission</span></h1>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="hero-dots">
+                <button class="dot active"></button>
+                <button class="dot"></button>
+                <button class="dot"></button>
+
+            </div>
+        </section>
+        <section class="hero">
+        </section>
+    </div>
+
+    <section class="intro-section">
+        <p>
+            Our experts assist you in transporting and sourcing specialized devices across<br>
+            Germany and all EU countries.
+        </p>
+        <p>
+            Let us streamline your search and logistics for seamless results.
+        </p>
+    </section>
+
+    <!-- Our services -->
+    <section class="services-section">
+        <!-- Dark top half -->
+        <div class="services-dark-half">
+            <div class="services-header">
+                <div class="services-header-line"></div>
+                <h2>Our&nbsp;Services</h2>
+                <div class="services-header-line"></div>
+            </div>
+            <p class="services-subtitle">
+                What we can do for you and your company?
+            </p>
+            <div class="services-cards">
+                <div class="service-card">
+                    <img src="images/service1.jpg" alt="Transport & Logistics">
+                    <div class="service-label">
+                        <div class="label-pointer"></div>
+                        <span>Transport & Logistics</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="images/service2.jpg" alt="Second-Hand Machines">
+                    <div class="service-label">
+                        <div class="label-pointer"></div>
+                        <span>Second-Hand Machines</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="images/service3.jpg" alt="AUCTIONS SERVICES">
+                    <div class="service-label">
+                        <div class="label-pointer"></div>
+                        <span>AUCTIONS SERVICES</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-description">
+                <p>
+                    Based on our services in machinery trade, auctions, and transport, we are the ideal partner for
+                    companies in the Middle East and North Africa looking for new or used industrial equipment from
+                    Europe.<br>
+                    Our experts help you find the right machine – reliable, cost-effective, and quality-checked. We
+                    present different options, advise you on the selection, and take care of the entire process all the
+                    way to your port.
+                </p>
+            </div>
+        </div>
+
+        <!-- White bottom half -->
+        <div class="services-white-half">
+            <div class="industry-icons-row">
+                <div class="industry-icon-box">
+                    <img src="images/secondhand-icon.png" alt="Second-Hand Machines">
+                    <div class="industry-icon-label">SECOND-HAND MACHINES</div>
+                </div>
+                <div class="industry-icon-box">
+                    <img src="images/transport-icon.svg" alt="Transport & Logistics">
+                    <div class="industry-icon-label">TRANSPORT & LOGISTICS</div>
+                </div>
+                <div class="industry-icon-box">
+                    <img src="images/auctions-icon.png" alt="Auctions Services">
+                    <div class="industry-icon-label">AUCTIONS SERVICES</div>
+                </div>
+            </div>
+            <hr class="industry-divider">
+            <div class="clients-row">
+                <img src="images/l1.png" alt="Fastrack">
+                <img src="images/l5.png" alt="Express">
+                <img src="images/l6.png" alt="Express2">
+                <img src="images/l8.png" alt="Boxtruck Logistics">
+                <img src="images/l10.png" alt="Cargo">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ Footer ========== -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(html => { document.getElementById('footer-placeholder').innerHTML = html; });
+    </script>
+
+
+
+    <a href="https://wa.me/491795033402" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/slider.js"></script>
+
+</body>
+
+</html>

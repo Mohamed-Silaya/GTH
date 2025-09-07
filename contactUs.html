@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>German Trade House - contact US</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Main CSS and Font Awesome CDN -->
+  <link rel="stylesheet" href="styles/style_home.css">
+  <link rel="stylesheet" href="styles/style_contactUs.css">
+  <!-- Leaflet CSS for map -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="page-loading">
+
+  <!-- Loading Overlay -->
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- NAVBAR (CARD STYLE) -->
+  <div id="site-navbar"></div>
+
+  <!-- Main Content -->
+  <main id="main-content" style="opacity: 0;">
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+      <div class="services-hero-bg">
+
+        <div class="services-hero-content">
+          <h1 class="services-hero-title">Contact US</h1>
+          <div class="services-hero-subtitle">Tell Us What You Need</div>
+          <div class="services-hero-accent"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Info section -->
+    <section class="contact-blocks-section">
+      <div class="contact-blocks-grid">
+        <div class="contact-block">
+          <div class="contact-block-icon">
+            <i class="fas fa-phone-volume"></i>
+          </div>
+          <div class="contact-block-content">
+            <div class="contact-block-title">Phone Number</div>
+            <div class="contact-block-detail">052069789040</div>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-icon">
+            <i class="fas fa-comment-dots"></i>
+          </div>
+          <div class="contact-block-content">
+            <div class="contact-block-title">Support Email</div>
+            <div class="contact-block-detail">Info@german-tradehouse.de</div>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-block-content">
+            <div class="contact-block-title">Office Address</div>
+            <div class="contact-block-detail">Siechenmarschstr. 13, 33615 Bielefeld</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+
+    <div class="container">
+      <section class="left-section">
+        <header class="contact-header" aria-labelledby="contact-title">
+          <h1 id="contact-title">
+            Contact <span class="highlight">Us</span>
+          </h1>
+          <p>We would love to hear from you!</p>
+        </header>
+
+        <nav class="social-links" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Facebook" tabindex="0">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram" tabindex="0">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </nav>
+      </section>
+
+  
+            
+
+        </form>
+        <div class="map-container" aria-label="Business location map">
+          <div id="map"></div>
+        </div>
+      </section>
+    </div>
+<!-- ============ Footer ========== -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(html => { document.getElementById('footer-placeholder').innerHTML = html; });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="scripts/map.js"></script>
+    <script src="scripts/navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>German Trade House - about US</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Main CSS and Font Awesome CDN -->
+  <link rel="stylesheet" href="styles/style_home.css">
+  <link rel="stylesheet" href="styles/style_aboutUs.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="page-loading">
+
+  <!-- Loading Overlay -->
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- NAVBAR (CARD STYLE) -->
+  <div id="site-navbar"></div>
+
+  <!-- Main content -->
+  <div id="main-content" style="opacity: 0">
+    <!-- About Us Hero Section -->
+    <section class="about-hero">
+      <div class="about-hero-bg">
+        <div class="about-breadcrumb">
+
+        </div>
+        <div class="about-hero-content">
+          <h1 class="about-hero-title">About Us</h1>
+          <div class="about-hero-subtitle">Discover German Trade House</div>
+          <div class="about-hero-accent"></div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- About Content Section -->
+  <section class="about-content">
+    <div class="about-illustration">
+      <img src="images/about_main.png" alt="Global Logistics Illustration">
+    </div>
+
+    <div class="about-text-section">
+      <div class="about-header">
+        <div class="about-header-line"></div>
+        <h2>About <span>GERMAN TRADE HOUSE e.K</span></h2>
+        <div class="about-header-line"></div>
+      </div>
+      <p class="about-subtitle">A little about us</p>
+
+      <!-- Company Description with Features - Three Columns -->
+      <div class="about-description-row">
+        <div class="company-description-col">
+          <p class="company-name">GERMAN TRADE HOUSE e.K</p>
+          <p class="company-text">
+            is a leading company in the fields of export, transport, and international trade, operating between Europe
+            and the Middle East. Founded by a team of industry experts, we provide comprehensive commercial and
+            consulting services, along with reliable transport and technical solutions.
+          </p>
+        </div>
+
+        <div class="features-col">
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>15 years of experience</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>+100 happy customers</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>5+ branches anywhere</span>
+          </div>
+        </div>
+
+        <div class="features-col">
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Professional Team</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Support all days</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Statistics Cards -->
+      <div class="stats-section">
+        <div class="stat-card">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Expert Members</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">15</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">120</div>
+          <div class="stat-label">Satisfied Customers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team section  -->
+
+  <section class="team-section">
+    <div class="team-header">
+      <div class="team-header-line"></div>
+      <h2>Meet Our <span>Expert Team</span></h2>
+      <div class="team-header-line"></div>
+    </div>
+    <p class="team-subtitle">We are professional and we work together</p>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="images/logo_GTH.png" alt="German Trade House">
+        <div class="member-name">Dipl. -Ing. Heinz Hauser</div>
+        <div class="member-role">CEO</div>
+        <div class="member-contact">info@german-tradehouse.de<br>+49 52069789040</div>
+      </div>
+      <div class="team-member">
+        <img src="images/logo_GTH.png" alt="German Trade House">
+        <div class="member-name">Feras Jandali M. Sc.</div>
+        <div class="member-role">Sales Manager</div>
+        <div class="member-contact">F.jandali@german-tradehouse.de<br>+49 1795033402</div>
+      </div>
+      <div class="team-member">
+        <img src="images/logo_GTH.png" alt="German Trade House">
+        <div class="member-name">Mrs Nadja Moos B.Sc</div>
+        <div class="member-role">Transport &amp; Logistics</div>
+        <div class="member-contact">Logistic@german-tradehouse.de<br>+49 1521 4512082</div>
+      </div>
+    </div>
+  </section>
+
+<!-- Our partner -->
+<section class="partners-section">
+    <div class="partners-header">
+        <div class="partners-header-line"></div>
+        <h2>Our Famous <span>Partners</span></h2>
+        <div class="partners-header-line"></div>
+    </div>
+    <p class="partners-subtitle">See who worked with us so far</p>
+    <div class="partners-logos-row">
+        <img src="images/l1.png" alt="Express">
+        <img src="images/l5.png" alt="Boxtruck Logistics">
+        <img src="images/l6.png" alt="Cargo Integrated Logistics">
+        <img src="images/l8.png" alt="Fastrack">
+        <img src="images/l10.png" alt="Express">
+    </div>
+</section>
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(html => { document.getElementById('footer-placeholder').innerHTML = html; });
+    </script>
+
+
+  <a href="https://wa.me/491795033402" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+
+  <script src="scripts/navbar.js"></script>
+</body>
+
+</html>
