@@ -1,5 +1,5 @@
 // Initialize the map
-const map = L.map("map").setView([51.9606649, 8.5261939], 15);
+const map = L.map("map").setView([51.9993, 8.5578], 15);
 
 // Add OpenStreetMap tiles
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
@@ -35,16 +35,16 @@ const customIcon = L.divIcon({
 });
 
 // Add marker for German Trade House
-const marker = L.marker([51.9606649, 8.5261939], { icon: customIcon })
+const marker = L.marker([51.9993, 8.5578], { icon: customIcon })
   .addTo(map)
   .bindPopup(
-    `
+      `
         <div style="text-align: center; font-family: Arial, sans-serif;">
-            <h3 style="margin: 0 0 8px 0; color: #2c2c2c;">German Trade House e.K.</h3>
-            <p style="margin: 0 0 5px 0; color: #666;">Beckendorfstraße 49</p>
-            <p style="margin: 0 0 10px 0; color: #666;">33739 Bielefeld, Germany</p>
+            <h3 style="margin: 0 0 8px 0; color: #2c2c2c;">Siechenmarschstr. 13</h3>
+            <p style="margin: 0 0 5px 0; color: #666;">Siechenmarschstr. 13</p>
+            <p style="margin: 0 0 10px 0; color: #666;">33615 Bielefeld, Germany</p>
             <button onclick="getDirections()" style="
-                 background: #B8860B;
+                background: #B8860B;
                 color: white;
                 border: none;
                 padding: 16px 28px;
@@ -81,10 +81,8 @@ map.on("click", function (e) {
 
 // Directions function
 function getDirections() {
-  const address = "Beckendorfstraße 49, 33739 Bielefeld, Germany";
-  const url = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
-    address
-  )}`;
+  const address = "Siechenmarschstr. 13, 33615 Bielefeld, Germany";
+  const url = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`;
   window.open(url, "_blank");
 }
 
