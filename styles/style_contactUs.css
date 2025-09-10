@@ -10,19 +10,23 @@
   --text-dark: #222;
   --text-light: #bababa;
   --border-color: #e2cfb2;
-  
+
   /* Enhanced shadows */
-  --shadow-light: 0 4px 24px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(167, 126, 57, 0.207);
+  --shadow-light: 0 4px 24px rgba(0, 0, 0, 0.125),
+    0 1px 3px rgba(167, 126, 57, 0.207);
   --shadow-medium: 0 6px 48px rgba(0, 0, 0, 0.125);
-  --shadow-heavy: 0 18px 40px rgba(34, 34, 34, 0.145), 0 8px 24px rgba(34, 34, 34, 0.137);
-  
+  --shadow-heavy: 0 18px 40px rgba(34, 34, 34, 0.145),
+    0 8px 24px rgba(34, 34, 34, 0.137);
+
   /* Transitions */
   --transition-fast: 0.17s ease;
   --transition-medium: 0.3s ease;
   --transition-slow: 0.5s ease;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -49,22 +53,12 @@ body {
 .contact-hero-bg {
   width: 100%;
   height: 100%;
-  background: 
-    linear-gradient(
-      135deg, 
-      rgba(34, 34, 34, 0.8) 0%, 
-      rgba(167, 126, 57, 0.3) 50%,
-      rgba(22, 22, 22, 0.75) 100%
+  background: linear-gradient(
+      135deg,
+      rgba(22, 22, 22, 0.75),
+      rgba(164, 121, 54, 0.25)
     ),
-    linear-gradient(
-      45deg,
-      rgba(167, 126, 57, 0.05) 0%,
-      transparent 25%,
-      rgba(167, 126, 57, 0.05) 50%,
-      transparent 75%,
-      rgba(167, 126, 57, 0.05) 100%
-    ),
-    url('images/par.jpg');
+    url("/images/par.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -86,21 +80,21 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   padding: clamp(0.5rem, 2vw, 0.8rem) clamp(1rem, 3vw, 1.5rem);
   border-radius: 25px;
   backdrop-filter: blur(15px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   font-weight: 600;
   font-size: clamp(0.8rem, 2vw, 0.9rem);
   color: var(--white);
   transition: all var(--transition-medium);
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-breadcrumb:hover {
-  background: rgba(255,255,255,0.25);
-  box-shadow: 0 6px 30px rgba(0,0,0,0.4);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
   transform: translateY(-2px);
 }
 
@@ -135,7 +129,7 @@ body {
   margin: 0 0 1rem 0;
   line-height: 1.1;
   font-family: Arial, sans-serif;
-  text-shadow: 4px 4px 12px rgba(0,0,0,0.8);
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
 }
 
 .contact-hero-subtitle {
@@ -143,7 +137,7 @@ body {
   font-size: clamp(1.2rem, 4vw, 1.8rem);
   font-weight: 600;
   margin-bottom: 2rem;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
   letter-spacing: 1px;
   opacity: 0.95;
 }
@@ -197,7 +191,7 @@ body {
 }
 
 .contact-block::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -226,7 +220,11 @@ body {
   justify-content: center;
   color: var(--white);
   font-size: 1.8rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
   border-radius: 50%;
   flex-shrink: 0;
   box-shadow: var(--shadow-medium);
@@ -342,7 +340,11 @@ body {
 .contact-feature i {
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
   color: var(--white);
   border-radius: 50%;
   display: flex;
@@ -411,7 +413,14 @@ body {
 }
 
 .social-link.instagram:hover {
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
   border-color: #e1306c;
 }
 
@@ -434,7 +443,11 @@ body {
 .map-header {
   padding: 2rem;
   text-align: center;
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
   color: var(--white);
 }
 
@@ -470,7 +483,7 @@ body {
 }
 
 .cta-content p {
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
   font-size: clamp(1.1rem, 3vw, 1.3rem);
   margin-bottom: 3rem;
   max-width: 600px;
@@ -536,36 +549,36 @@ body {
     background-attachment: scroll;
     padding: 0 1rem;
   }
-  
+
   .contact-breadcrumb {
     position: static;
     margin-bottom: 2rem;
     align-self: flex-start;
   }
-  
+
   .contact-blocks-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .contact-features {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .cta-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .cta-btn {
     width: 100%;
     max-width: 300px;
     justify-content: center;
   }
-  
+
   .contact-block-detail a,
   .contact-block-detail.office-address {
-    font-size: clamp(1.05rem, 2vw + 0.3rem, 1.4rem) !important;
+    font-size: clamp(1.1rem, 2vw + 0.3rem, 1.4rem) !important;
     line-height: 1.4;
     padding: 0.2rem 0;
     -webkit-text-size-adjust: none;
@@ -577,21 +590,21 @@ body {
   .contact-hero {
     height: clamp(300px, 50vh, 400px);
   }
-  
+
   .contact-info-section {
     padding: 2rem 1.5rem;
   }
-  
+
   .social-links {
     gap: 1rem;
   }
-  
+
   .social-link {
     width: 50px;
     height: 50px;
     font-size: 1.2rem;
   }
-  
+
   .contact-block-detail a,
   .contact-block-detail.office-address {
     font-size: 1.2rem !important;
