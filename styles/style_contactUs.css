@@ -258,7 +258,7 @@ body {
 .contact-block-detail.office-address {
   font-size: clamp(1.2rem, 1.5vw + 0.5rem, 1rem) !important;
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--text-dark);
   text-decoration: none;
   transition: all var(--transition-fast);
   word-break: break-word;
