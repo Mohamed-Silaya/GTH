@@ -5,6 +5,7 @@ const map = L.map("map").setView([51.9993, 8.5578], 15);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
 
 // Create custom marker icon
+
 const customIcon = L.divIcon({
   html: `
         <div style="

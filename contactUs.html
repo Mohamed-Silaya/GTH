@@ -3,22 +3,21 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>German Trade House - contact US</title>
+  <title>German Trade House - Contact Us</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="images/logo_GTH.png">
-<link rel="icon" type="image/svg+xml" href="images/logo_GTH.svg"
+  
+  <link rel="icon" type="image/png" href="images/logo_GTH.png">
+  <link rel="icon" type="image/svg+xml" href="images/logo_GTH.svg">
 
   <!-- Main CSS and Font Awesome CDN -->
   <link rel="stylesheet" href="styles/style_home.css">
   <link rel="stylesheet" href="styles/style_contactUs.css">
   <!-- Leaflet CSS for map -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body class="page-loading">
-
   <!-- Loading Overlay -->
   <div id="loading-overlay">
     <div class="spinner"></div>
@@ -29,19 +28,19 @@
 
   <!-- Main Content -->
   <main id="main-content" style="opacity: 0;">
-
-    <!-- Services Hero -->
-    <section class="services-hero">
-      <div class="services-hero-bg">
-
-        <div class="services-hero-content">
-          <h1 class="services-hero-title">Contact US</h1>
-          <div class="services-hero-subtitle">Tell Us What You Need</div>
-          <div class="services-hero-accent"></div>
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <div class="contact-hero-bg">
+  
+        <div class="contact-hero-content">
+          <h1 class="contact-hero-title">Contact Us</h1>
+          <div class="contact-hero-subtitle">Tell Us What You Need</div>
+          <div class="contact-hero-accent"></div>
         </div>
       </div>
     </section>
-    <!-- Info section -->
+
+    <!-- Contact Info Blocks -->
     <section class="contact-blocks-section">
       <div class="contact-blocks-grid">
         <div class="contact-block">
@@ -50,71 +49,131 @@
           </div>
           <div class="contact-block-content">
             <div class="contact-block-title">Phone Number</div>
-            <div class="contact-block-detail">052069789040</div>
+            <div class="contact-block-detail">
+              <a href="tel:+491795033402">+49 179 503 3402</a>
+            </div>
           </div>
         </div>
+        
         <div class="contact-block">
           <div class="contact-block-icon">
-            <i class="fas fa-comment-dots"></i>
+            <i class="fas fa-envelope"></i>
           </div>
           <div class="contact-block-content">
             <div class="contact-block-title">Support Email</div>
-            <div class="contact-block-detail">Info@german-tradehouse.de</div>
+            <div class="contact-block-detail">
+              <a href="mailto:info@germantradehouse.com">info@germantradehouse.com</a>
+            </div>
           </div>
         </div>
+        
         <div class="contact-block">
           <div class="contact-block-icon">
             <i class="fas fa-map-marker-alt"></i>
           </div>
           <div class="contact-block-content">
             <div class="contact-block-title">Office Address</div>
-            <div class="contact-block-detail">Siechenmarschstr. 13, 33615 Bielefeld</div>
+            <div class="contact-block-detail">Siechenmarschstr. 13, 33615 Bielefeld, Germany</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contacts -->
-
-    <div class="container">
-      <section class="left-section">
-        <header class="contact-header" aria-labelledby="contact-title">
-          <h1 id="contact-title">
-            Contact <span class="highlight">Us</span>
-          </h1>
-          <p>We would love to hear from you!</p>
-        </header>
-
-        <nav class="social-links" aria-label="Social media links">
-          <a href="#" class="social-link" aria-label="Facebook" tabindex="0">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="social-link" aria-label="Instagram" tabindex="0">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </nav>
-      </section>
-
-  
+    <!-- Contact Info Section -->
+    <section class="contact-main-section">
+      <div class="contact-main-container">
+        <!-- Centered Contact Info -->
+        <div class="contact-info-section">
+          <div class="contact-info-content">
+            <h2>Get In <span class="highlight">Touch</span></h2>
+            <p>We would love to hear from you! Whether you need machinery, transport services, or auction assistance, our team is here to help.</p>
             
+            <div class="contact-features">
+              <div class="contact-feature">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h4>Quick Response</h4>
+                  <p>We respond within 24 hours</p>
+                </div>
+              </div>
+              <div class="contact-feature">
+                <i class="fas fa-users"></i>
+                <div>
+                  <h4>Expert Team</h4>
+                  <p>Professional consultation</p>
+                </div>
+              </div>
+              <div class="contact-feature">
+                <i class="fas fa-globe"></i>
+                <div>
+                  <h4>Global Service</h4>
+                  <p>Worldwide shipping available</p>
+                </div>
+              </div>
+            </div>
 
-        </form>
-        <div class="map-container" aria-label="Business location map">
-          <div id="map"></div>
+            <div class="social-links">
+              <a href="#" class="social-link facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/491795033402" class="social-link whatsapp" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
         </div>
-      </section>
-    </div>
-<!-- ============ Footer ========== -->
-    <div id="footer-placeholder"></div>
-    <script>
-        fetch('/footer.html')
-            .then(response => response.text())
-            .then(html => { document.getElementById('footer-placeholder').innerHTML = html; });
-    </script>
+      </div>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-    <script src="scripts/map.js"></script>
-    <script src="scripts/navbar.js"></script>
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="map-container">
+        <div class="map-header">
+          <h3>Find Our Office</h3>
+          <p>Visit us at our headquarters in Bielefeld, Germany</p>
+        </div>
+        <div id="map" class="interactive-map"></div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-cta-section">
+      <div class="cta-content">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Let's discuss how we can help you with your machinery and logistics needs.</p>
+        <div class="cta-buttons">
+          <a href="tel:+491795033402" class="cta-btn primary">
+            <i class="fas fa-phone"></i>
+            <span>Call Now</span>
+          </a>
+          <a href="https://wa.me/491795033402" class="cta-btn secondary">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(html => { document.getElementById('footer-placeholder').innerHTML = html; });
+  </script>
+
+  <!-- WhatsApp Float Button (Desktop only) -->
+  <a href="https://wa.me/491795033402" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="scripts/map.js"></script>
+  <script src="scripts/navbar.js"></script>
 </body>
 
 </html>
